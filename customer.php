@@ -2,17 +2,21 @@
 class customer
 {
     public $name;
-    public $color;
-    public function set_name($name) 
-    {
-        $this->name = $name;
-    }
-    public function get_name() 
-    {
-        return $this->name;
-    }
+  public $color;
+
+//   public function __construct($name) {
+//     $this->name = $name;
+//   }
+  public function __construct()
+  {
+      $this->name = "DQA";
+      $this->color = "blue";
+  }
+  public function get_name() {
+    return $this->name;
+  }
 }
 
-$c = new customer();
-$c->set_name("DQA");
-echo $c->get_name();
+$apple = new customer();
+echo $apple->get_name();
+
